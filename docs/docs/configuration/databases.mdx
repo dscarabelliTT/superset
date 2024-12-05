@@ -1725,7 +1725,7 @@ Second, there are performance considerations. The meta database will push any fi
 
 #### Enabling the meta database
 
-To enable the Superset meta database, first you need to set the `ENABLE_SUPERSET_META_DB` feature flag to true. Then, add a new database of type "Superset meta database" with the SQLAlchemy URI "superset://".
+To enable the Superset meta database, first you need to set the `ENABLE_SUPERSET_META_DB` feature flag to true. Then, add a new database of type "Superset meta database" with the SQLAlchemy URI "postgresql://superset:XXXXXXXXXX@superset-postgresql/superset".
 
 If you enable DML in the meta database users will be able to run DML queries on underlying databases **as long as DML is also enabled in them**. This allows users to run queries that move data across databases.
 
